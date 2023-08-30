@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes shake {
+  10% {
+      transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+
+main{ 
+width: min(42.8rem, 90%);
+padding: 4.8rem 6.4rem 6.4rem;
+margin-top: -10rem;
+text-align: center;
+
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+/* screen1 */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+
+}
+
+h1, p {
+  color: #34355B;
+  
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 2.6rem;
+}
+
+.screen2 p {
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    font-family: 'Dancing Script', sans-serif;
+    animation-name: position ;
+    animation-duration: 3s;
+}
+
+#img:hover{
+  animation: shake 0.52s ease infinite;
+}
+
+button{
+  background: #FF9500;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  gap: .1rem;
+  align-items: center;
+  width: 17.4rem;
+  height: 5.2rem;
+  margin: 1.7rem 6.3rem;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'DM Sans';
+  border: none;
+}
+
+button:hover{
+  background: #d37d04;
+  cursor: pointer;
+}
